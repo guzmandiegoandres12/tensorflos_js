@@ -1,0 +1,29 @@
+{
+  "name": "tensorflow_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "start:dev": "webpack-dev-server --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.11.4",
+    "@babel/plugin-syntax-optional-chaining": "7.8.3",
+    "@babel/plugin-transform-runtime": "7.11.0",
+    "@babel/preset-env": "7.11.0",
+    "babel-loader": "8.1.0",
+    "html-webpack-plugin": "4.3.0",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.11.2",
+    "@tensorflow/tfjs": "^1.7.4",
+    "@tensorflow/tfjs-vis": "^1.0.2"
+  }
+}
