@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "@babel/runtime": "7.11.2",
+    "@tensorflow-models/knn-classifier": "^1.2.2",
+    "@tensorflow-models/mobilenet": "^2.0.4",
     "@tensorflow/tfjs": "1.7.4",
     "@tensorflow/tfjs-vis": "1.0.2",
     "materialize-css": "^1.0.0-rc.2"

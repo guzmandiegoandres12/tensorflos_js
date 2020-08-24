@@ -24,6 +24,21 @@
    .brand-logo{
      margin-left: 1rem;
    }
+   img{
+     width: 100%;
+   }
+   .formContaine{
+     display: flex;
+     flex-direction: column;
+   }
+   .panel{
+     margin-top: .5rem;
+     width: inherit;
+   }
+   video{
+     width: 100%;
+     min-height: 300px;
+   }
   </style>
 </head>
 <body>
@@ -43,23 +58,28 @@
             </div>
           </div>
           <div class="row">
-            <div class="col s4">
-             <a class="waves-effect waves-light btn"  id="reloadTrainig" href="#">Load Training</a>
+            <div class="col s6">
+              <a class="waves-effect waves-light btn"  id="createModel" href="#">Create Model</a>
             </div>
-            <div class="col s4">
-              <a class="waves-effect waves-light btn" id="stopTrainig" href="#">stop Trainig</a>
+            <div class="col s6">
+              <a class="waves-effect waves-light btn"  id="reloadTrainig" href="#">Load Training</a>
             </div>
-            <div class="col s4">
-              <a href="#" class="waves-effect waves-light btn" id="save"> save model</a>
-            </div>
-
+            
           </div>
           <div class="row">
-            <div class=" col s12 m6">
+            <div class="col s6">
+              <a class="waves-effect waves-light btn" id="stopTrainig" href="#">stop Trainig</a>
+            </div>
+            <div class="col s6">
+              <a href="#" class="waves-effect waves-light btn" id="save"> save model</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class=" col s12 l6 formContaine">
               <label class="">Archivo de modelo .json</label>
               <input class="waves-effect waves-light btn " type="file" name="" id="jsonModel">
             </div>
-            <div class="col s12 m6">
+            <div class="col s12 l6 formContaine">
               <label>Archivo de modelo .bin</label>
               <input class="waves-effect waves-light btn" type="file" name="" id="binModel">
             </div>
@@ -86,7 +106,33 @@
               <span class="card-title">Modelo de reconocimiento de images</span>
             </div>
           </div>
-      
+          <div class="row">
+            <div class="col s12 m6" id="d">
+              <img id="img" src="https://i.imgur.com/JlUvsxa.jpg" crossorigin alt="imagen de prueba para modelo">
+            </div>
+            <div class="col s12 m6">
+              <a class="waves-effect waves-light btn" id="newImage">new image</a>
+            </div>
+          </div>
+          <div class="row">
+            <div id="decription" class="col s12 panel">
+            
+            </div>
+          </div>
+          <div class="row">
+            <div  class="col s12  panel">
+              <video playsinline muted id="camera"></video>
+            </div>
+            <div class="col s12 l6 formContaine">
+              <a class="waves-effect waves-light btn"  id="pauserCamCapture">Activar Captura</a>
+            </div>
+            <div class="col s12 l6 formContaine">
+              <div id="imageCaptureDescription">
+                
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
